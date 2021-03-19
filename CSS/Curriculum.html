@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="./Curriculum_files/masterstyle.css">
+    <link rel="stylesheet" href="./Curriculum_files/all.min.css">
+</head>
+<body>
+
+    <div class="main-container">
+
+        <nav>
+            <ul class="barra">
+                <li>
+                  <a href="http://127.0.0.1:5500/index.html#0">
+                    <span>Sobre mi</span>
+                    <span>
+                      <i class="fas fa-address-card" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5500/index.html#0">
+                    <span>Proyectos</span>
+                    <span>
+                      <i class="fas fa-tasks" aria-hidden="true"></i>    
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5500/index.html#0">
+                    <span>Clientes</span>
+                    <span>
+                      <i class="fas fa-users" aria-hidden="true"></i>      
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://127.0.0.1:5500/index.html#0">
+                    <span>Contacto</span>
+                    <span>
+                      <i class="fas fa-envelope-open-text" aria-hidden="true"></i>    
+                    </span>
+                  </a>
+                </li>
+              </ul>
+        </nav>
+
+        <section>
+            <h2>Esto es una sección</h2>
+            <p>
+                Quiero que hagan un curriculo de ustedes:
+
+                En el cual debe de tener las siguientes secciones:
+
+                Datos Personales:
+                Nombre, Edad, NSS: (inventado) 
+                Correo: del poli
+
+                Escolaridad:
+                Secundaria, Media superior
+                año iniciaron, año en terminaron
+                Asi como los logros principales
+
+                Cursos, Diplomas, Certificaciones
+                titulo, año en que lo obtuvieron y de que es
+
+                Hobbies
+                Videojuegos, juegos de mesa, peliculas, anime
+                manga, comics
+
+                Habilidades(Skill)
+                Creatividad
+                Innovacion
+                Liderazgo
+                Comunicacion acertiva
+                
+
+
+            </p>
+            <article>
+                <h3>Sección para crear articulos</h3>
+                <br>
+                <p>Enlaces para las siguientes páginas:</p>
+                <br>
+                <a href="http://127.0.0.1:5500/animacion.html">Página Animada</a>
+                <br>
+                <a href="http://127.0.0.1:5500/hovermenu.html">Página Hover</a>
+
+            </article>
+            <aside>
+                <h3>Barra lateral izq o der</h3>
+            </aside>
+        </section>
+
+        <footer>
+            <h4>Son los pies de la página</h4>
+        </footer>
+
+    </div>
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

@@ -1,0 +1,39 @@
+*{
+    padding: 1;
+    margin:0;
+    color:#10bb27;
+    text-align: center;
+}
+
+html, body{
+    background-color: #1a1717;
+    background-image: url(Green_Hill.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main-container{
+    border:20px solid #2a17d4;
+    border-radius: 10px;
+    margin: 2rem;
+    background-color: rgb(50, 50, 50);
+}
+
+nav, section, footer, article, aside{
+    border: 2px solid #8D9EC6;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+article, aside{
+    width:40%;
+    display: inline-block;
+    height: 300px;
+    background-color: #A06B9A;
+
+}
+
+nav, section, footer{
+    background-color: #004E66;
+}
