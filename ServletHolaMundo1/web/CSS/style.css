@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29/04/2021, 10:01:22 AM
+    Author     : eduardo
+*/
+body{
+    background: rgb(73, 80, 85);
+    font-size: 16px;
+    font-family: 'ComicSans','Libre Baskerville', serif;
+}
+
+
+
+table{
+    text-align: center;
+}
+
+.login{
+    text-align: center;
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+    background-color: rgb(59, 48, 48);
+    width: 50%;
+    height: 25rem;
+    margin: auto;
+    border-color: rgb(211, 197, 197);
+    border-radius: 2rem;
+}
+
+.login_1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+    background-color: rgb(59, 48, 48);
+    width: 50%;
+    height: 5rem;
+    margin: auto;
+    border-color: rgb(211, 197, 197);
+    border-radius: 2rem;
+}
+
+.con_usu input{
+    padding: 0.5px;
+    border: none;
+    background: rgb(255, 248, 211);
+    outline: none;
+}
+
+
+.con_usu{
+    position: relative;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(255, 239, 20);
+}
+
+.formu{
+    text-align: center;
+    padding: 5rem;
+
+}
+
+.con_usu label{
+    position: absolute;
+    color: rgb(255, 254, 254);
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .2s;
+}

@@ -9,31 +9,116 @@ and open the template in the editor.
         <title>Registro de Usuarios</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <script src="JS/validar.js" ></script>
     </head>
     <body>
-        <div class="container" >
+        <div class="login" >
             
-            <form name="formulario" method="post" 
-                  action="Registro">
+            <div class="containerRegistro">
+                <div class="formu">
+                <form name="formulario" method="post" 
+                  action="Registro" onsubmit="return validare(formulario)">
+                <div class="con_usu">
                 <label>Nombre:</label>
-                <input type="text" name="nombre" >
+                <input type="text" name="nombre" onkeypress="return validarp(event)" >
+                </div>
                 <br>
+                <div class="con_usu">
                  <label>Apellido Paterno:</label>
-                <input type="text" name="appat" >
+                <input type="text" name="appat" onkeypress="return validarp(event)" >
+                </div>
                 <br>
+                <div class="con_usu">
                  <label>Apellido Materno:</label>
-                <input type="text" name="apmat" >
+                <input type="text" name="apmat" onkeypress="return validarp(event)" >
+                </div>
                 <br>
-                 <label>Edad:</label>
-                <input type="number" name="edad" min="01" max="99" size="2" >
+                <div class="con_usu">
+                <label>Edad:</label>
+                <input type="number" name="edad" min="01" max="100" size="2" onkeypress="return validarn(event)">
+                </div>
                 <br>
+                <div class="con_usu">
                  <label>Correo:</label>
-                <input type="email" name="correo" >
+                <input type="email" name="correo" onkeypress="return validarcR(event)">
+                </div>
                 <br>
+                <div class="con_usu">
                 <input type="submit" value="Registro de Usuarios">
                 <input type="reset" value="Borrar Registro">
+                </div>
             </form>
-            
+                </div>
+            </div>
         </div>
+            <br>
+            <div class="login_1">
+            <div class="containerConsulta">
+                <br>
+                <form method="get" name="consultarregistro" action="Consultar">
+                    <div class="con_usu">
+                    <input type="submit" value="Consultar Tabla de Usuarios">
+                    </div>
+                </form>
+            </div>
+            </div>
+            <br>
+            <div class="login_1">
+            <div class="containerEliminar">
+                <form method="post" name="formularioeliminar" action="Eliminar">
+                    <br>
+                    <div class="con_usu">
+                    <label>ID del Usuario a Eliminar</label>
+                    <input type="number" name="ideliminar" onkeypress="return validarn(event)"> 
+                    <br>
+                    <input type="submit" value="Eliminar Usuario" >
+                    </div>
+                </form> 
+            </div>
+            </div> 
+            
+            <br>
+            <div class="login">
+            <div class="containerActualizar">
+                <form method="post" name="actualizarregistro" action="Actualizar">
+                    <div class="con_usu">
+                    <label>ID del Usuario a Actualizar</label>
+                    <input type="number" name="idactualizar">
+                    </div>
+                    <br>
+                    <div class="con_usu">
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre_a" onkeypress="return validarp(event)">
+                    </div>
+                        <br>
+                        <div class="con_usu">
+                        <label>Apellido Paterno:</label>
+                        <input type="text" name="appat_a" onkeypress="return validarp(event)">
+                        </div>
+                        <br>
+                        <div class="con_usu">
+                        <label>Apellido Paterno:</label>
+                        <input type="text" name="appmat_a" onkeypress="return validarp(event)">
+                        </div>
+                        <br>
+                        <div class="con_usu">
+                        <label>Edad:</label>
+                        <input type="number" name="edad_a" min="01" max="99" size="2" onkeypress="return validarn(event)">
+                        </div>
+                        <br>
+                        <div class="con_usu">
+                        <label>Correo</label>
+                        <input type="email" name="correo_a" onkeypress="return validarcA(event)">
+                        </div>
+                        <br>
+                    <br>
+                    <br>
+                    <input type="submit" value="Actualizar Usuario">
+                    <input type="reset" value="Borrar Datos" >
+                </form>
+            </div>
+            </div>
+            
     </body>
 </html>
